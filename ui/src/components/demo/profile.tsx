@@ -1,28 +1,27 @@
-import { FC } from "react"
-import "./index.css"
+import { FC } from 'react';
+import './index.css';
 
 const Profile: FC = () => {
-    const user = {
-        name: 'Hedy Lamarr',
-        imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-        imageSize: 90,
-    }
+  const user = {
+    name: 'Hedy Lamarr',
+    imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+    imageSize: 90,
+  };
 
-    return (
-        <>
-            <h1>{user.name}</h1>
-            <img
-                className="avatar"
-                src={user.imageUrl}
-                alt={'Photo of ' + user.name}
-                style={{
-                    width: user.imageSize,
-                    height: user.imageSize
-                }}
-            />
-        </>
-    )
-    
-}
+  return (
+    <>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        src={user.imageUrl}
+        alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize,
+        }}
+      />
+    </>
+  );
+};
 
-export default Profile
+export default Profile;
