@@ -1,11 +1,11 @@
 import { FC } from 'react';
-import Square from '../../components/demo/game';
+import Board from '../../components/demo/game';
 
 const Layout: FC = () => {
   return (
     <>
       <div>
-        <Square />
+        <Board />
       </div>
     </>
   );
