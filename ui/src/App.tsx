@@ -1,14 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import './App.css';
-import Layout from './pages/Layout';
+import { useMergeRoutes } from './router';
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      Component: Layout,
-    },
-  ]);
+  const routes = useMergeRoutes();
+  console.log(routes);
+  const router = createBrowserRouter(routes);
   return <RouterProvider router={router} />;
 }
 
