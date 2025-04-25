@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router';
-import './App.css';
-import { useMergeRoutes } from './router';
-import InitialLoadingPlaceholder from './components/InitialLoadingPlaceholder';
+import { useMergeRoutes } from '@/router';
+import InitialLoadingPlaceholder from '@/components/InitialLoadingPlaceholder';
 
 function App() {
   const routes = useMergeRoutes();
