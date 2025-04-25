@@ -1,11 +1,10 @@
 import { FC } from 'react';
-import Board from '../../components/demo/game';
 
 const Layout: FC = () => {
   return (
     <>
       <div>
-        <Board />
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
       </div>
     </>
   );
