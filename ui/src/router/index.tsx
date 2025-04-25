@@ -18,7 +18,6 @@ function useMergeRoutes() {
   };
 
   useEffect(() => {
-    console.log('useMergeRoutes');
     init();
   }, []);
 
